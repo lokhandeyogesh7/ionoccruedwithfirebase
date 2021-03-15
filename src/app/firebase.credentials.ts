@@ -5,5 +5,6 @@ export const FIREBASE_CONFIG = {
     storageBucket: "ionicshoppinglist-d0c29.appspot.com",
     messagingSenderId: "830815706121",
     appId: "1:830815706121:web:50b06090a582b0197cacd8",
-    measurementId: "G-7JC1GRWJJ3"
+    measurementId: "G-7JC1GRWJJ3",
+    databaseURL: "https://ionicshoppinglist-d0c29-default-rtdb.firebaseio.com/"
 }

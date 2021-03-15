@@ -9,10 +9,13 @@ import { MyApp } from './app.component';
 import { FIREBASE_CONFIG } from './firebase.credentials';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database'
+import { ShoppingListService } from '../services/shoppinglist/shoppinglist.service';
+import { EditShoppingItemPage } from '../pages/edit-shopping-item/edit-shopping-item';
 
 @NgModule({
   declarations: [
-    MyApp
+    MyApp,
+    EditShoppingItemPage
   ],
   imports: [
     BrowserModule,
@@ -22,12 +25,14 @@ import { AngularFireDatabaseModule } from 'angularfire2/database'
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp
+    MyApp,
+    EditShoppingItemPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: ErrorHandler, useClass: IonicErrorHandler }
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    ShoppingListService
   ]
 })
 export class AppModule { }
